@@ -1,13 +1,21 @@
 # reconnect
-## A Ruby script for Apple laptops to quickly reconnect or or maintain a connection to a home network.
+## A Ruby script for Apple laptops to quickly reconnect or maintain a connection to a home network.
 
-This is a little ruby script that does it's best to keep you connected when local network conditions aren't ideal. When run it will try twice to reconnect if not already connecting, attempt power-cycling the wireless card, and attempting two more times. 
+This is a little Ruby script that does it's best to keep you connected when local network conditions aren't ideal. When run it will try twice to reconnect if not already connecting, attempt power-cycling the wireless card, and then attempt two more times.
 
 ### Recomended Usage
 
 Copy the script somewhere convenient and enter your home network name and password in the top configuration section. Call the script with no arguments to reconnect as needed. 
 
+```sh
+  ./reconnect.rb
+```
+
 If your network is frequently disconnecting and you want to monitor and reconnect, call the script with the argument "start" and it will remain running, checking your network every two minutes and reconnecting if needed.
+
+```sh
+  ./reconnect.rb start
+```
 
 ### Compatibility
 
